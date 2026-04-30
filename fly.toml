@@ -1,4 +1,4 @@
-app = "smart-shoe-server"
+app = "txbds"
 primary_region = "hkg"
 
 [http_service]
