@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>智能铁鞋定位系统</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>智能铁鞋定位系统</h1>
+        <div class="status">
+            <span id="connection-status" class="disconnected">未连接</span>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="map-container">
+            <div id="map"></div>
+        </div>
+        
+        <div class="sidebar">
+            <h3>实时位置</h3>
+            <div id="position-info" class="info-panel">
+                <p>等待数据...</p>
+            </div>
+            
+            <h3>历史记录</h3>
+            <div id="history-list" class="history-panel">
+                <p>暂无记录</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

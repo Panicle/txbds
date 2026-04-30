@@ -1,0 +1,21 @@
+{
+  "buildCommand": "echo 'Build completed'",
+  "devCommand": "python web_server.py",
+  "functions": {
+    "api/**/*.py": {
+      "runtime": "@vercel/python@3.0.1",
+      "memory": 256
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/web/$1"
+    }
+  ],
+  "installCommand": "pip install -r requirements.txt"
+}
